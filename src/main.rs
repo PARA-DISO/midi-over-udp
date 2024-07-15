@@ -4,12 +4,13 @@ mod proxy;
 #[derive(Parser, Debug)]
 #[command(version, about, long_about = None)]
 struct Args {
-    // MIDI Input port
+    /// MIDI Input port
     #[arg(short,long,default_value_t=0)]
     port: usize,
-    // udp send target
+    /// udp send target
     #[arg(long,default_value_t=String::from("localhost:8083"))]
     to: String,
+    /// Show MIDI Ports
     #[arg(short, long)]
     list: bool,
 }
