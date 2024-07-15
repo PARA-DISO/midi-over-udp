@@ -1,0 +1,8 @@
+[package]
+name = "midi2udp"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.5.9", features = ["derive"] }
+midir = "0.10.0"
